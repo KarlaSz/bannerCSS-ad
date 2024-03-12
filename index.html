@@ -3,26 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="KarolinaSz" />
     <title>Ad banner - CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;800;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Open+Sans:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1e2b8f248a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="row">
         <div class="left">
           <div class="logo">
-            <a href="#">logo</a>
+            <a href="https://dobrymiodek.pl/"
+              ><img src="img/logo.png" class="logo"
+            /></a>
           </div>
           <div class="titleBox">
             <div class="tittle">
-              <h3 class="tittleOne">Premium</h3>
-              <h3 class="tittleTwo">Fresh honey</h3>
+              <h3 class="tittleOne">Polish</h3>
+              <h3 class="tittleTwo">Fresh HONEY</h3>
             </div>
           </div>
           <div class="details">
-            <h4 class="price">50 zł</h4>
+            <h4 class="price">45 zł</h4>
+            <a href="tel:+48578207361" class="btn"
+              ><span><i class="fa-solid fa-phone"></i></span> Call now</br>
+          </a>
+            
           </div>
         </div>
+        <div class="right">
+          <img src="img/honey.png" alt="" />
+        </div>
       </div>
+      <ul class="social">
+        <li>
+          <a
+            href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdobrymiodek%2F"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/DobryMiodek.pasieka"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.tiktok.com/@pasiekadobrymiodek?is_from_webapp=1&sender_device=pc"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+        </li>
+      </ul>
+      <img src="img/shape11.png" alt="" class="shape shapeOne" />
+      <img src="/img/shape2.png" alt="" class="shape shapeTwo" />
     </div>
   </body>
 </html>

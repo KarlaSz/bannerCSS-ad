@@ -1,3 +1,284 @@
 * {
-    bo
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+::selection {
+  color: var(--primaryColor);
+  background: var(--selection);
+}
+
+:root {
+  --primaryColor: orange;
+  --secondaryColor: rgb(238, 234, 227);
+  --selection: rgb(255, 55, 0);
+  --text: #fff;
+  --lightBg: #555454;
+  --fontOne: "Lato", sans-serif;
+  --fontTwo: "Open Sans", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+  width: 500px;
+  height: 450px;
+  background: var(--secondaryColor);
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 80px;
+  height: 50px;
+}
+
+.titleBox {
+  overflow: hidden;
+}
+.tittle {
+  font-family: var(--fontOne);
+  text-transform: uppercase;
+  color: var(--text);
+  margin-top: 2em;
+  animation: title 4s linear 0.5s infinite alternate;
+}
+
+@keyframes title {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.tittleOne {
+  letter-spacing: 0.7em;
+  font-size: 2.8rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  line-height: 33px;
+  width: 220px;
+  background: var(--lightBg);
+}
+
+.tittleTwo {
+  letter-spacing: 0.2em;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 5px 10px;
+  line-height: 27px;
+  width: 200px;
+  background: var(--lightBg);
+}
+
+.details {
+  position: relative;
+  z-index: 5;
+  font-family: var(--fontTwo);
+  margin-top: 7em;
+}
+
+.price {
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 4rem;
+  letter-spacing: 5px;
+  color: var(--primaryColor);
+  margin: 15px 0 10px;
+}
+
+a.btn {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #555454;
+  padding: 10px 15px;
+  margin-top: 10px;
+  color: var(--primaryColor);
+  background: var(--selection);
+  box-shadow: 2px 2px 10px var(--lightBg);
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+a.btn:hover {
+  animation: btnAnimation 0.5s linear alternate infinite;
+}
+
+@keyframes btnAnimation {
+  0% {
+    transform: translateX(-3px) scale(1);
+  }
+  25% {
+    transform: translateX(5px) scale(0.9);
+  }
+  50% {
+    transform: translateX(-3px) scale(0.9);
+  }
+  100% {
+    transform: translateX(5px) scale(1);
+  }
+}
+
+span {
+  margin-right: 10px;
+}
+
+.right img {
+  position: absolute;
+  top: 20px;
+  right: -50px;
+  width: 380px;
+  height: 380px;
+  object-fit: contain;
+  animation: product 5s linear infinite alternate;
+}
+
+@keyframes product {
+  0% {
+    transform: translateY(-15px);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(12px);
+  }
+}
+
+ul.social {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  height: 30px;
+  font-size: 1.8rem;
+  background: var(--lightBg);
+  padding: 0.8em 0.9em;
+  list-style-type: none;
+}
+
+ul i {
+  color: var(--text);
+  transition: background 0.3s;
+}
+ul a i:hover {
+  color: var(--primaryColor);
+}
+
+.shape {
+  position: absolute;
+  display: flex;
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+  transition: 0.3s;
+}
+
+.shapeOne {
+  top: 285px;
+  right: 64px;
+  animation: shapeOne 2s linear infinite alternate;
+}
+
+@keyframes shapeOne {
+  0% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.shapeOne:hover {
+  transform: scale(1.2);
+}
+.shapeTwo {
+  top: 307px;
+  left: 260px;
+  animation: shapeTwo 1s linear infinite alternate;
+}
+
+@keyframes shapeTwo {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.shapeTwo:hover {
+  transform: scale(1.4);
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  width: 115px;
+  height: 115px;
+  background: var(--lightBg);
+  border-radius: 50%;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 220px;
+  left: -40px;
+  width: 270px;
+  height: 270px;
+  background: var(--lightBg);
+  border-radius: 50%;
 }

@@ -41,10 +41,7 @@ Stylowa karta reklamowa dla dowolnego produktu — z naciskiem na estetykę, kon
 
 - HTML5
 - CSS3 (flexbox, animacje, media queries)
-- brak frameworków i JS — 100% czystego kodu
+-  100% czystego kodu
 
----
-
-## 📁 Struktura katalogu
 
 

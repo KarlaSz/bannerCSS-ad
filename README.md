@@ -9,7 +9,7 @@ Proste, lekkie i nowoczesne banery reklamowe stworzone w czystym HTML i CSS — 
 ## 🔹 Projekt 1: DobryMiodek Ad
 
 🌐 **Podgląd:**  
-👉 [Zobacz baner na GitHub Pages](https://karlasz.github.io/bannerCSS-ad/DobryMiodek-Ad/index)
+👉 [Zobacz animowany baner](https://karlasz.github.io/bannerCSS-ad/DobryMiodek-Ad/index)
 
 📌 **Opis:**  
 Reklama produktu naturalnego — miodu — zbudowana w oparciu o nowoczesny layout i animacje CSS. Czysty HTML5 + CSS3 z delikatnym efektem przejścia i responsywnością.
@@ -25,7 +25,7 @@ Reklama produktu naturalnego — miodu — zbudowana w oparciu o nowoczesny layo
 ## 🔹 Projekt 2: Product Ad Card
 
 🌐 **Podgląd:**  
-👉 [Zobacz kartę produktu](https://karlasz.github.io/bannerCSS-ad/Product-Ad-Card/index)
+👉 [Zobacz animowaną reklamę](https://karlasz.github.io/bannerCSS-ad/Product-Ad-Card/index)
 
 📌 **Opis:**  
 Stylowa karta reklamowa dla dowolnego produktu — z naciskiem na estetykę, kontrast i prezentację. W pełni stylizowana przy pomocy CSS z wykorzystaniem zmiennych kolorów i efektów hover.

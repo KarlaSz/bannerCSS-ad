@@ -1,6 +1,6 @@
 #Animated Ads - banner
 
-3. # 🎨 CSS Banner koleckaj by Karolina Szymaszkiewicz
+# 🎨 CSS Banner kolekcja by Karolina Szymaszkiewicz
 
 Proste, lekkie i nowoczesne banery reklamowe stworzone w czystym HTML i CSS — bez JavaScript. Idealne jako inspiracja do nauki animacji, UI oraz budowania kart produktów i reklam.
 
